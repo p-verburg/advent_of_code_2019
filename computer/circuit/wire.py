@@ -1,20 +1,21 @@
-from computer.circuit.line import Line, HorizontalLine, VerticalLine
+from computer.circuit.line import HorizontalLine, VerticalLine
 from computer.circuit.point import Point
 
 
 class Wire:
     sections = []
 
-    def __int__(self):
+    def __init__(self):
         self.sections = []
 
 
 class WireLayer:
-    head = Point()
-    wire = Wire()
+    def __init__(self):
+        self.head = Point(0, 0)
+        self.wire = Wire()
 
-    def __init__(self, start_x, start_y):
-        self.head = Point(start_x, start_y)
+    def reset(self):
+        self.head = Point(0, 0)
         self.wire = Wire()
 
     def add_line(self, line):

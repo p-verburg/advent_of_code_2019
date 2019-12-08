@@ -10,12 +10,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UfMKtseLQhpeNkNU8b0Gm13HBA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,7 +27,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -31,8 +35,8 @@
       <recent name="D:\src\advent_of_code_2019\day_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorWireIntersectionsTestCase.test_intersections_wires_1">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittests in tests">
+    <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="advent_of_code_2019" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -40,11 +44,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_1/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_3/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -111,19 +115,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.__init__" />
       <item itemvalue="Python tests.Unittests in tests" />
       <item itemvalue="Python tests.Unittests in shortcircuit_detector_tests.py" />
       <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorLineIntersectionTestCase" />
       <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorWireIntersectionsTestCase.test_intersections_wires_1" />
+      <item itemvalue="Python.__init__ (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorWireIntersectionsTestCase.test_intersections_wires_1" />
-        <item itemvalue="Python tests.Unittests in shortcircuit_detector_tests.py" />
-        <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorLineIntersectionTestCase" />
         <item itemvalue="Python tests.Unittests in tests" />
-        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.__init__ (1)" />
+        <item itemvalue="Python tests.Unittests in shortcircuit_detector_tests.py" />
+        <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorWireIntersectionsTestCase.test_intersections_wires_1" />
+        <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorLineIntersectionTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -153,68 +157,113 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="435" y="36" key="#Inspections" timestamp="1575771811555">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="435" y="36" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1575771811555" />
+    <state x="361" y="70" key="#Notifications" timestamp="1575764567018">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="70" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1575764567018" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575744920570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575744920570" />
+    <state x="342" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575773836680">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="342" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1575773836680" />
+    <state x="413" y="319" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1575775211603">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="413" y="319" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/0.0.1536.824@0.0.1536.824" timestamp="1575775211603" />
     <state width="701" height="466" key="DebuggerActiveHint" timestamp="1575762946570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="701" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1575762946570" />
-    <state width="1515" height="300" key="GridCell.Tab.0.bottom" timestamp="1575762999344">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1575775449124">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="300" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575762999344" />
-    <state width="1515" height="300" key="GridCell.Tab.0.center" timestamp="1575762999344">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1575775449124" />
+    <state x="548" y="166" key="FileChooserDialogImpl" timestamp="1575764921526">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="300" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575762999344" />
-    <state width="1515" height="300" key="GridCell.Tab.0.left" timestamp="1575762999344">
+    <state x="548" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575764921526" />
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom" timestamp="1575775385019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="300" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575762999344" />
-    <state width="1515" height="300" key="GridCell.Tab.0.right" timestamp="1575762999344">
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575775385019" />
+    <state width="1493" height="269" key="GridCell.Tab.0.center" timestamp="1575775385019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="300" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575762999344" />
-    <state width="1515" height="300" key="GridCell.Tab.1.bottom" timestamp="1575763000176">
+    <state width="1493" height="269" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575775385019" />
+    <state width="1493" height="269" key="GridCell.Tab.0.left" timestamp="1575775385019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="300" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575763000176" />
-    <state width="1515" height="300" key="GridCell.Tab.1.center" timestamp="1575763000176">
+    <state width="1493" height="269" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575775385019" />
+    <state width="1493" height="269" key="GridCell.Tab.0.right" timestamp="1575775385019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="300" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575763000176" />
-    <state width="1515" height="300" key="GridCell.Tab.1.left" timestamp="1575763000176">
+    <state width="1493" height="269" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575775385019" />
+    <state width="1493" height="313" key="GridCell.Tab.1.bottom" timestamp="1575774553164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="300" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575763000176" />
-    <state width="1515" height="300" key="GridCell.Tab.1.right" timestamp="1575763000176">
+    <state width="1493" height="313" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575774553164" />
+    <state width="1493" height="313" key="GridCell.Tab.1.center" timestamp="1575774553164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="300" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575763000176" />
-    <state x="277" y="54" key="SettingsEditor" timestamp="1575763180289">
+    <state width="1493" height="313" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575774553164" />
+    <state width="1493" height="313" key="GridCell.Tab.1.left" timestamp="1575774553164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575763180288" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1575753292870">
+    <state width="1493" height="313" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575774553164" />
+    <state width="1493" height="313" key="GridCell.Tab.1.right" timestamp="1575774553164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1575753292870" />
+    <state width="1493" height="313" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575774553164" />
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt" timestamp="1575774856589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1575774856589" />
+    <state x="277" y="54" key="SettingsEditor" timestamp="1575764924015">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575764924015" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1575775446784">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1575775446784" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1575764667617">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575764667617" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575775424775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1575775424775" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1575775314214">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1575775314214" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/shortcircuit_detector_tests.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/computer/shortcircuit_detector.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
         <watch expression="second_wire" />
+        <watch expression="first_wire" />
+      </configuration>
+      <configuration name="PythonConfigurationType">
+        <watch expression="first_wire.sections" />
+        <watch expression="second_wire.sections" />
       </configuration>
     </watches-manager>
   </component>

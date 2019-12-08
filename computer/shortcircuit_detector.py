@@ -1,20 +1,30 @@
+import sys
 from copy import deepcopy
 
-from computer.circuit.point import Point
+from computer.circuit.point import Point, distance
 from computer.circuit.line import Line, Direction
 
 
-class shortcircuit_detector:
+class Intersection:
+    location = None
+    distance = sys.maxsize
+
+    def __init__(self, point, distance):
+        self.location = point
+        self.distance = distance
+
+
+class ShortCircuitDetector:
 
     def __init__(self):
-        pass
+        self.origin = Point(0, 0)
 
     def detect_line_intersection(self, first_line, second_line):
         line_one = deepcopy(first_line)
         line_one.normalize()
         line_two = deepcopy(second_line)
         line_two.normalize()
-        
+
         if line_one.direction == line_two.direction:
             if line_one.fixed_coordinate != line_two.fixed_coordinate:
                 return None
@@ -33,8 +43,8 @@ class shortcircuit_detector:
             elif line_one.contains(line_two.start):
                 return deepcopy(line_two)
 
-        if line_one.start == line_two.fixed_coordinate \
-                or line_one.start < line_two.fixed_coordinate != line_one.end >= line_two.fixed_coordinate:
+        if line_one.start <= line_two.fixed_coordinate <= line_one.end \
+                and line_two.start <= line_one.fixed_coordinate <= line_two.end:
             if line_one.direction == Direction.Horizontal:
                 return Point(line_two.fixed_coordinate, line_one.fixed_coordinate)
             else:
@@ -49,3 +59,18 @@ class shortcircuit_detector:
                 if intersection is not None:
                     intersections.append(intersection)
         return intersections
+
+    def find_closest_intersection(self, first_wire, second_wire):
+        intersections = self.detect_intersections(first_wire, second_wire)
+        closest_distance = sys.maxsize
+        closest_intersection = None
+        for intersection in intersections:
+            if intersection == self.origin:
+                continue
+            if not isinstance(intersection, Point):
+                continue
+            intersection_distance = distance(self.origin, intersection)
+            if intersection_distance < closest_distance:
+                closest_distance = intersection_distance
+                closest_intersection = intersection
+        return Intersection(closest_intersection, closest_distance)
