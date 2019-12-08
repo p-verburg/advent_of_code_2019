@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="779929d6-dffc-4c43-9aa0-43e6ebc04552" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Python Unit Test" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UfMKtseLQhpeNkNU8b0Gm13HBA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\src\advent_of_code_2019\computer\circuit" />
+      <recent name="D:\src\advent_of_code_2019\day_1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorWireIntersectionsTestCase.test_intersections_wires_1">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="advent_of_code_2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_1/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for shortcircuit_detector_tests.ShortCircuitDetectorLineIntersectionTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="advent_of_code_2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;shortcircuit_detector_tests.ShortCircuitDetectorLineIntersectionTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for shortcircuit_detector_tests.ShortCircuitDetectorWireIntersectionsTestCase.test_intersections_wires_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="advent_of_code_2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;shortcircuit_detector_tests.ShortCircuitDetectorWireIntersectionsTestCase.test_intersections_wires_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in shortcircuit_detector_tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="advent_of_code_2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/shortcircuit_detector_tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="advent_of_code_2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;*tests.py&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.__init__" />
+      <item itemvalue="Python tests.Unittests in tests" />
+      <item itemvalue="Python tests.Unittests in shortcircuit_detector_tests.py" />
+      <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorLineIntersectionTestCase" />
+      <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorWireIntersectionsTestCase.test_intersections_wires_1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorWireIntersectionsTestCase.test_intersections_wires_1" />
+        <item itemvalue="Python tests.Unittests in shortcircuit_detector_tests.py" />
+        <item itemvalue="Python tests.Unittests for shortcircuit_detector_tests.ShortCircuitDetectorLineIntersectionTestCase" />
+        <item itemvalue="Python tests.Unittests in tests" />
+        <item itemvalue="Python.__init__" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="779929d6-dffc-4c43-9aa0-43e6ebc04552" name="Default Changelist" comment="" />
+      <created>1575743135438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575743135438</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575744920570">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575744920570" />
+    <state width="701" height="466" key="DebuggerActiveHint" timestamp="1575762946570">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="701" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1575762946570" />
+    <state width="1515" height="300" key="GridCell.Tab.0.bottom" timestamp="1575762999344">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="300" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575762999344" />
+    <state width="1515" height="300" key="GridCell.Tab.0.center" timestamp="1575762999344">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="300" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575762999344" />
+    <state width="1515" height="300" key="GridCell.Tab.0.left" timestamp="1575762999344">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="300" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575762999344" />
+    <state width="1515" height="300" key="GridCell.Tab.0.right" timestamp="1575762999344">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="300" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575762999344" />
+    <state width="1515" height="300" key="GridCell.Tab.1.bottom" timestamp="1575763000176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="300" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575763000176" />
+    <state width="1515" height="300" key="GridCell.Tab.1.center" timestamp="1575763000176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="300" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575763000176" />
+    <state width="1515" height="300" key="GridCell.Tab.1.left" timestamp="1575763000176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="300" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575763000176" />
+    <state width="1515" height="300" key="GridCell.Tab.1.right" timestamp="1575763000176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="300" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575763000176" />
+    <state x="277" y="54" key="SettingsEditor" timestamp="1575763180289">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575763180288" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1575753292870">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1575753292870" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/shortcircuit_detector_tests.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="second_wire" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
