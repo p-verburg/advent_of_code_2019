@@ -13,4 +13,6 @@ distance = detector.find_closest_intersection(wires[0], wires[1]).distance
 
 print("Minimum distance of intersection: ", distance)
 
+distance = detector.find_shortest_circuit(wires[0], wires[1]).distance
 
+print("Length of shortest closed circuit: ", distance)

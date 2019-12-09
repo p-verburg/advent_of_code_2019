@@ -47,6 +47,11 @@ class Line:
     def normalize(self):
         if self.end < self.start:
             self.start, self.end = self.end, self.start
+            return True
+        return False
+
+    def length(self):
+        return abs(self.end - self.start)
 
     def get_end_point(self):
         if self.direction == Direction.Horizontal:

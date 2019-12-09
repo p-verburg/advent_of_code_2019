@@ -7,7 +7,7 @@ from computer.circuit.wire import WireLayer
 from computer.shortcircuit_detector import ShortCircuitDetector
 
 
-class ShortCircuitDetectorLineIntersectionTestCase(unittest.TestCase):
+class FindLineIntersectionTests(unittest.TestCase):
     @staticmethod
     def check_lines_intersect(first_line, second_line):
         detector = ShortCircuitDetector()
@@ -51,7 +51,31 @@ class ShortCircuitDetectorLineIntersectionTestCase(unittest.TestCase):
         self.lines_intersect_test(HorizontalLine(0, 1, 4), HorizontalLine(0, 4, 1), HorizontalLine(0, 0, 5))
 
 
-class ShortCircuitDetectorWireIntersectionsTestCase(unittest.TestCase):
+def create_test_data_1():
+    first_wire = WireLayer().right(8).up(5).left(5).down(3).wire
+    second_wire = WireLayer().up(7).right(6).down(4).left(4).wire
+    return first_wire, second_wire
+
+
+def create_test_data_2():
+    first_wire = WireLayer().right(75).down(30).right(83).up(83).left(12) \
+        .down(49).right(71).up(7).left(72).wire
+    second_wire = WireLayer().up(62).right(66).up(55).right(34) \
+        .down(71).right(55).down(58).right(83).wire
+    return first_wire, second_wire
+
+
+def create_test_data_3():
+    first_wire = WireLayer().right(98).up(47).right(26).down(63) \
+        .right(33).up(87).left(62).down(20) \
+        .right(33).up(53).right(51).wire
+    second_wire = WireLayer().up(98).right(91).down(20).right(16) \
+        .down(67).right(40).up(7).right(15) \
+        .up(6).right(7).wire
+    return first_wire, second_wire
+
+
+class FindClosestIntersectionsTests(unittest.TestCase):
     @staticmethod
     def find_intersections(first_wire, second_wire):
         detector = ShortCircuitDetector()
@@ -62,61 +86,60 @@ class ShortCircuitDetectorWireIntersectionsTestCase(unittest.TestCase):
         detector = ShortCircuitDetector()
         return detector.find_closest_intersection(first_wire, second_wire)
 
-    @staticmethod
-    def create_test_data_1():
-        first_wire = WireLayer().right(8).up(5).left(5).down(3).wire
-        second_wire = WireLayer().up(7).right(6).down(4).left(4).wire
-        return first_wire, second_wire
-
     def test_intersections_wires_1(self):
-        first_wire, second_wire = self.create_test_data_1()
+        first_wire, second_wire = create_test_data_1()
 
         intersections = self.find_intersections(first_wire, second_wire)
 
         self.assertCountEqual([Point(0, 0), Point(6, 5), Point(3, 3)], intersections)
 
     def test_find_closest_intersection_1(self):
-        first_wire, second_wire = self.create_test_data_1()
+        first_wire, second_wire = create_test_data_1()
 
         intersection = self.find_closest_intersection(first_wire, second_wire)
 
         self.assertEqual(Point(3, 3), intersection.location)
         self.assertEqual(6, intersection.distance)
 
-    @staticmethod
-    def create_test_data_2():
-        first_wire = WireLayer().right(75).down(30).right(83).up(83).left(12) \
-            .down(49).right(71).up(7).left(72).wire
-        second_wire = WireLayer().up(62).right(66).up(55).right(34) \
-            .down(71).right(55).down(58).right(83).wire
-        return first_wire, second_wire
-
     def test_find_closest_intersection_2(self):
-        first_wire, second_wire = self.create_test_data_2()
+        first_wire, second_wire = create_test_data_2()
 
         intersection = self.find_closest_intersection(first_wire, second_wire)
 
         self.assertEqual(159, intersection.distance)
 
-    @staticmethod
-    def create_test_data_3():
-        first_wire = WireLayer().right(98).up(47).right(26).down(63) \
-            .right(33).up(87).left(62).down(20) \
-            .right(33).up(53).right(51).wire
-        second_wire = WireLayer().up(98).right(91).down(20).right(16) \
-            .down(67).right(40).up(7).right(15) \
-            .up(6).right(7).wire
-        return first_wire, second_wire
-
     def test_find_closest_intersection_3(self):
-        first_wire, second_wire = self.create_test_data_3()
+        first_wire, second_wire = create_test_data_3()
 
         intersection = self.find_closest_intersection(first_wire, second_wire)
 
         self.assertEqual(135, intersection.distance)
 
 
-class CircuitMapParserTestCase(unittest.TestCase):
+class FindShortestCircuitTests(unittest.TestCase):
+    @staticmethod
+    def find_shortest_circuit(wires):
+        detector = ShortCircuitDetector()
+        return detector.find_shortest_circuit(wires[0], wires[1])
+
+    def test_find_shortest_circuit_1(self):
+        intersection = self.find_shortest_circuit(create_test_data_1())
+
+        self.assertEqual(Point(6, 5), intersection.location)
+        self.assertEqual(30, intersection.distance)
+
+    def test_find_shortest_circuit_2(self):
+        intersection = self.find_shortest_circuit(create_test_data_2())
+
+        self.assertEqual(610, intersection.distance)
+
+    def test_find_shortest_circuit_3(self):
+        intersection = self.find_shortest_circuit(create_test_data_3())
+
+        self.assertEqual(410, intersection.distance)
+
+
+class CircuitMapParserTests(unittest.TestCase):
     class MockBuilder:
         wire = []
 
