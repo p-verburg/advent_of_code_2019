@@ -2,7 +2,7 @@ import unittest
 from engine.fuel_calculator import calculate_module_fuel
 
 
-class FuelCalculatorTestCase(unittest.TestCase):
+class FuelCalculatorTests(unittest.TestCase):
     def test_calculates_weightless(self):
         self.assertEqual(0, calculate_module_fuel(0))
 
