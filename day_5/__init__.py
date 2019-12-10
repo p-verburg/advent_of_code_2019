@@ -1,7 +1,9 @@
-from computer.intcode_computer import IntcodeComputer, ListInput, ListOutput
+from computer.intcode_computer import IntcodeComputer
+from computer.io import SingleInput, LastOutput
 
-input = ListInput([1])
-output = ListOutput()
+# input = SingleInput(1)
+input = SingleInput(5)
+output = LastOutput()
 computer = IntcodeComputer(input, output)
 
 initial_memory = []
@@ -12,4 +14,4 @@ computer.reset_memory(initial_memory)
 
 computer.run_program()
 
-print(output.list)
+print(output.value)

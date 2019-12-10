@@ -1,33 +1,7 @@
+from computer.io import NoneInput, VoidOutput
 from computer.programs.memory import Memory
-from computer.programs.operations import OperationFactory, HaltOperation
+from computer.programs.operations import OperationFactory
 from computer.programs.parameters import ParameterFactory
-
-
-class NoneInput:
-    @staticmethod
-    def receive():
-        return None
-
-
-class ListInput:
-    def __init__(self, inputs):
-        self._inputs = inputs
-
-    def receive(self):
-        return self._inputs.pop()
-
-
-class VoidOutput:
-    def send(self, value):
-        pass
-
-
-class ListOutput:
-    def __init__(self):
-        self.list = []
-
-    def send(self, value):
-        self.list.append(value)
 
 
 class IntcodeComputer:
@@ -58,9 +32,7 @@ class IntcodeComputer:
 
         operation.execute(parameters, self._input, self._output)
 
-        if isinstance(operation, HaltOperation):
-            return -1
-        return instruction_pointer + operation.parameter_count + 1
+        return operation.get_new_pointer(instruction_pointer)
 
     def run_program(self):
         instruction_pointer = 0

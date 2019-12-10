@@ -1,11 +1,12 @@
 import unittest
-from computer.intcode_computer import IntcodeComputer, ListOutput
+from computer.intcode_computer import IntcodeComputer
+from computer.io import SingleInput, LastOutput
 from computer.programs.operations import OperationCode
-from tests.computer_mocks import MockConstantInput
 
 
 class InstructionTests(unittest.TestCase):
-    def create_computer(self, memory):
+    @staticmethod
+    def create_computer(memory):
         computer = IntcodeComputer()
         computer.reset_memory(memory)
         return computer
@@ -43,6 +44,7 @@ class InstructionTests(unittest.TestCase):
 
         pointer = computer.execute_instruction(0)
 
+        self.assertEqual(4, pointer)
         self.assertEqual(99, computer._memory[4])
 
     def test_multiply_instruction_negative(self):
@@ -50,13 +52,13 @@ class InstructionTests(unittest.TestCase):
 
         pointer = computer.execute_instruction(0)
 
+        self.assertEqual(4, pointer)
         self.assertEqual(99, computer._memory[4])
 
 
-class ProgramTests(unittest.TestCase):
-
-    def single_program_test(self, expected, memory, input=None, output=None):
-        computer = IntcodeComputer(input, output)
+class SingleProgramTests(unittest.TestCase):
+    def single_program_test(self, expected, memory):
+        computer = IntcodeComputer()
         computer.reset_memory(memory)
         computer.run_program()
         self.assertEqual(expected, computer._memory._data)
@@ -86,15 +88,75 @@ class ProgramTests(unittest.TestCase):
             [30, 1, 1, 4, 2, 5, 6, 0, 99],
             [1, 1, 1, 4, 99, 5, 6, 0, 99])
 
-    def test_input_output_program(self):
-        input = MockConstantInput(34)
-        output = ListOutput()
-        self.single_program_test(
-            [34, 0, 4, 0, 99],
-            [3, 0, 4, 0, 99],
-            input, output)
 
-        self.assertEqual([34], output.list)
+class InputOutputProgramTests(unittest.TestCase):
+    @staticmethod
+    def run_program(memory, input, output):
+        computer = IntcodeComputer(input, output)
+        computer.reset_memory(memory)
+        computer.run_program()
+
+    def input_output_test(self, input_value, program, expected_output):
+        input = SingleInput(input_value)
+        output = LastOutput()
+
+        self.run_program(program, input, output)
+
+        self.assertEqual(expected_output, output)
+
+    def test_input_output_program(self):
+        self.input_output_test(34, [3, 0, 4, 0, 99], 34)
+
+    def test_equal_position_mode_false(self):
+        self.input_output_test(7, [3, 9, 8, 9, 10, 9, 4, 9, 99, -1, 8], 0)
+
+    def test_equal_position_mode_true(self):
+        self.input_output_test(8, [3, 9, 8, 9, 10, 9, 4, 9, 99, -1, 8], 1)
+
+    def test_less_than_position_mode_false(self):
+        self.input_output_test(12, [3, 9, 7, 9, 10, 9, 4, 9, 99, -1, 8], 0)
+
+    def test_less_than_position_mode_true(self):
+        self.input_output_test(6, [3, 9, 7, 9, 10, 9, 4, 9, 99, -1, 8], 1)
+
+    def test_equal_immediate_mode_false(self):
+        self.input_output_test(7, [3, 3, 1108, -1, 8, 3, 4, 3, 99], 0)
+
+    def test_equal_immediate_mode_true(self):
+        self.input_output_test(8, [3, 3, 1108, -1, 8, 3, 4, 3, 99], 1)
+
+    def test_less_than_immediate_mode_false(self):
+        self.input_output_test(12, [3, 3, 1107, -1, 8, 3, 4, 3, 99], 0)
+
+    def test_less_than_immediate_mode_true(self):
+        self.input_output_test(6, [3, 3, 1107, -1, 8, 3, 4, 3, 99], 1)
+
+    def test_jump_if_zero_position_mode_false(self):
+        self.input_output_test(3, [3, 12, 6, 12, 15, 1, 13, 14, 13, 4, 13, 99, -1, 0, 1, 9], 1)
+
+    def test_jump_if_zero_position_mode_true(self):
+        self.input_output_test(0, [3, 12, 6, 12, 15, 1, 13, 14, 13, 4, 13, 99, -1, 0, 1, 9], 0)
+
+    def test_jump_if_zero_immediate_mode_false(self):
+        self.input_output_test(3, [3, 3, 1105, -1, 9, 1101, 0, 0, 12, 4, 12, 99, 1], 1)
+
+    def test_jump_if_zero_immediate_mode_true(self):
+        self.input_output_test(0, [3, 3, 1105, -1, 9, 1101, 0, 0, 12, 4, 12, 99, 1], 0)
+
+    def test_less_than_equal_or_greater_less(self):
+        self.input_output_test(7, [3, 21, 1008, 21, 8, 20, 1005, 20, 22, 107, 8, 21, 20, 1006, 20, 31,
+                                   1106, 0, 36, 98, 0, 0, 1002, 21, 125, 20, 4, 20, 1105, 1, 46, 104,
+                                   999, 1105, 1, 46, 1101, 1000, 1, 20, 4, 20, 1105, 1, 46, 98, 99], 999)
+
+    def test_less_than_equal_or_greater_equal(self):
+        self.input_output_test(8, [3, 21, 1008, 21, 8, 20, 1005, 20, 22, 107, 8, 21, 20, 1006, 20, 31,
+                                   1106, 0, 36, 98, 0, 0, 1002, 21, 125, 20, 4, 20, 1105, 1, 46, 104,
+                                   999, 1105, 1, 46, 1101, 1000, 1, 20, 4, 20, 1105, 1, 46, 98, 99], 1000)
+
+    def test_less_than_equal_or_greater_greater(self):
+        self.input_output_test(9, [3, 21, 1008, 21, 8, 20, 1005, 20, 22, 107, 8, 21, 20, 1006, 20, 31,
+                                   1106, 0, 36, 98, 0, 0, 1002, 21, 125, 20, 4, 20, 1105, 1, 46, 104,
+                                   999, 1105, 1, 46, 1101, 1000, 1, 20, 4, 20, 1105, 1, 46, 98, 99], 1001)
 
 
 if __name__ == '__main__':
