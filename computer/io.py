@@ -9,7 +9,7 @@ class ListInput:
         self._inputs = inputs
 
     def receive(self):
-        return self._inputs.pop()
+        return self._inputs.pop(0)
 
 
 class SingleInput:
@@ -47,7 +47,7 @@ class LastOutput:
         return self.value == other
 
     def __str__(self):
-        str(self.value)
+        return str(self.value)
 
     def send(self, value):
         self.value = value
